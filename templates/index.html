@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <h5 class="card-header">Borderless Table</h5>
+    <div class="table-responsive text-nowrap">
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th>รหัสวิชา</th>
+            <th>รายวิชา</th>
+            <th>หน่วยกิต</th>
+            <th>หมวดหมู่</th>
+            <th>ภาคเรียนที่</th>
+            <th>ปีการศึกษา</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for item in subjects %}
+          <tr>
+            <td>{{item.class_id}}</td>
+            <td>{{item.class_name}}</td>
+            <td>{{item.class_credit}}</td>
+            <td>{{item.class_category}}</td>
+            <td>{{item.semester}}</td>
+            <td>{{item.class_year}}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+{% endblock content %}
