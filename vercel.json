@@ -2,7 +2,7 @@
     "version": 2,
     "builds": [
         {
-            "src": "regis/wsgi.py",
+            "src": "resgis/wsgi.py",
             "use": "@vercel/python"
         },
         {
@@ -20,7 +20,7 @@
         },
         {
             "src": "/(.*)",
-            "dest": "regis/wsgi.py"
+            "dest": "resgis/wsgi.py"
         }
     ]
     
