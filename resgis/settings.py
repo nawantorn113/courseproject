@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'resgis.wsgi.application'
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "khimdb",
+        "NAME": "postgres",
         "USER": "postgres",
-        "PASSWORD": "apisit250",
-        "HOST": "127.0.0.1",
+        "PASSWORD": "09022547Kn/*",
+        "HOST": "db.urskaijpywkenrduhrzx.supabase.co",
         "PORT": "5432",
     }
 }
